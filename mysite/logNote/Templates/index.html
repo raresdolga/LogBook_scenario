@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LogBook</title>
+  {% load staticfiles %}
+  <link rel = 'stylesheet' href="{% static 'Bootstrap/css/bootstrap.min.css' %}" type = "text/css"/>
+  <link rel = 'stylesheet' href="{% static 'css/style.css' %}" type = "text/css"/>
+  <link rel = 'stylesheet' href="{% static 'scss/style.scss' %}"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="{% static 'Bootstrap/js/bootstrap.min.js' %}"></script>
+   <script src="{% static 'js/index.js' %}"></script>
+   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  </head>
+<body>
+    <div>
+        {% block content%}
+        {% endblock %}
+    </div>
+</body>
+</html>
