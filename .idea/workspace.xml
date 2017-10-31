@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52b5bcc7-500a-47ef-bb49-cfb8844d3d73" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mysite/logNote/Templates/logIn.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/db.sqlite3" afterPath="$PROJECT_DIR$/mysite/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/logNote/Templates/home.html" afterPath="$PROJECT_DIR$/mysite/logNote/Templates/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/logNote/Templates/index.html" afterPath="$PROJECT_DIR$/mysite/logNote/Templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/logNote/admin.py" afterPath="$PROJECT_DIR$/mysite/logNote/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/logNote/models.py" afterPath="$PROJECT_DIR$/mysite/logNote/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/logNote/urls.py" afterPath="$PROJECT_DIR$/mysite/logNote/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/logNote/views.py" afterPath="$PROJECT_DIR$/mysite/logNote/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/mysite/urls.py" afterPath="$PROJECT_DIR$/mysite/mysite/urls.py" />
-    </list>
+    <list default="true" id="52b5bcc7-500a-47ef-bb49-cfb8844d3d73" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,8 +40,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mysite/logNote/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+            <state relative-caret-position="425">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -148,10 +138,10 @@
         <option value="$PROJECT_DIR$/mysite/logNote/Templates/home.html" />
         <option value="$PROJECT_DIR$/mysite/logNote/admin.py" />
         <option value="$PROJECT_DIR$/mysite/logNote/functions_DB.py" />
-        <option value="$PROJECT_DIR$/mysite/logNote/views.py" />
         <option value="$PROJECT_DIR$/mysite/logNote/models.py" />
         <option value="$PROJECT_DIR$/mysite/logNote/Templates/welcome.html" />
         <option value="$PROJECT_DIR$/mysite/logNote/urls.py" />
+        <option value="$PROJECT_DIR$/mysite/logNote/views.py" />
       </list>
     </option>
   </component>
@@ -290,8 +280,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="865" y="14" width="976" height="1038" extended-state="1" />
-    <editor active="true" />
+    <frame x="865" y="14" width="976" height="1038" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -439,8 +429,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysite/logNote/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="425">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
