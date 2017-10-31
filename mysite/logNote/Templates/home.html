@@ -1,4 +1,46 @@
 {% extends "index.html" %}
+ {% load staticfiles %}
 {% block content %}
-<p> here we will have the main content</p>
+	<div class="container"> 
+        <div style="padding-top:15%">
+      <div class="col-sm-6"> 
+		<div class="w3-card-4">
+            
+            <header class="w3-container w3-light-grey">
+             <Center> <h3>Add Note</h3></Center> 
+            </header>
+            
+            <div class="w3-container">
+              <hr>
+              <CenteR> <img src="{% static 'home/img/note.png' %}" alt="Avatar" width="100" height="100"></CenteR>
+              <br>
+            </div>
+            
+            <button class="w3-button w3-block w3-dark-grey">+ Add</button>
+            
+            </div>
+         </div>
+
+        
+          <div class="col-sm-6"> 
+                <div class="w3-card-4">
+                      
+                      <header class="w3-container w3-light-grey">
+                       <Center><h3>View all Notes</h3> </Center> 
+                      </header>
+                      
+                      <div class="w3-container">
+                        <hr>
+                        <CenteR> <img src="{% static 'home/img/magnify.svg' %}" alt="Avatar" width="100" height="100"></CenteR>
+                        <br>
+                        
+                      </div>
+                      
+                      <button class="w3-button w3-block w3-dark-grey"> <span class="glyphicon glyphicon-search" aria-hidden="true"></span> View</button>
+                      
+                      </div>
+                  </div>
+            </div>
+    </div>   
+
 {% endblock %}

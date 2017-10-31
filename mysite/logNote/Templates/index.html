@@ -3,19 +3,45 @@
 <head>
 <title>LogBook</title>
   {% load staticfiles %}
-  <link rel = 'stylesheet' href="{% static 'Bootstrap/css/bootstrap.min.css' %}" type = "text/css"/>
-  <link rel = 'stylesheet' href="{% static 'css/style.css' %}" type = "text/css"/>
-  <link rel = 'stylesheet' href="{% static 'scss/style.scss' %}"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    <script src="{% static 'Bootstrap/js/bootstrap.min.js' %}"></script>
-   <script src="{% static 'js/index.js' %}"></script>
+   <link rel = 'stylesheet' href="{% static 'Bootstrap/css/bootstrap.min.css' %}" type = "text/css"/>
    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  </head>
+	<!--correspond to the home.html page-->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="{% static 'home/css/interface.css' %}">
+   </head>
 <body>
-    <div>
-        {% block content%}
-        {% endblock %}
-    </div>
+        <nav id="mainNav" class="navbar navColor navbar-default navbar-fixed-top navbar-custom">
+                <div class="container">
+                        <img class = "pull-left" src="{% static 'home/img/home.svg' %}" width="40" height="40"> 
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                        </button> -->
+                        
+                         <!-- <img class = "pull-left" src="img/profile2small.png">                 -->
+                         <a class="navbar-brand" href="#"> &nbsp;<b>Simple LogBook </b></a>  
+                         
+                      
+                    </div>
+        
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <center> 
+                        <div class="nav navbar-nav navbar-right">
+                                <a href="#c#"><b>Logout</b> &nbsp;<img class = "pull-right" src="{% static 'home/img/logout.png' %}" width="40" height="40"></a>
+                        </div>
+                    </center>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+	{% block content %}
+     
+	{% endblock %}
 </body>
 </html>
