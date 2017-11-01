@@ -13,7 +13,12 @@ from flask import (
 def welcome(request):
     return render(request, 'welcome.html')
 
+def goToNote(request):
+    return render(request, 'addNote.html')
 
+def goToView(request):
+    return render(request, 'search.html')
+    
 def home(request):
     return render(request,'home.html')
 
@@ -33,5 +38,12 @@ def welcomeSign(request):
         secondName = request.POST['secondName']
     #check if the email does not exist and save in the db
     u = User(email = emailAd, password = password, firstName = firstName, lastName = secondName)
-    u.save();
+    u.save()
     return render(request,'home.html', {'password': password, 'email':emailAd, 'firstName': firstName,'secondName': secondName})
+
+def makeNote(request):
+    if request.method == 'POST':
+        title = request.POST['noteTitle']
+        currentDate = request.POST['myDate']
+        currentMessage = request.POST['myMessage']
+    return render(request, 'addNote.html', {'title':noteTItle, 'currentDate':myDate, 'currentMessage':myMessage})
