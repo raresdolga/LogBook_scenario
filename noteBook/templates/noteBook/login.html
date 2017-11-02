@@ -5,7 +5,8 @@
   {% load staticfiles %}
   <script src="{% static 'js/index.js' %}"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+<script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="{% static 'css/form.css' %}">
@@ -24,7 +25,7 @@
           <h1>Sign Up Now</h1>
           
           
-          <form action="/homepage/" method="post">{% csrf_token %}
+          <form action="" method="post">{% csrf_token %}
           
 
           <div class="field-wrap">
