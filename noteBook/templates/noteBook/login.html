@@ -24,7 +24,7 @@
           <h1>Sign Up Now</h1>
           
           
-          <form action="/" method="post">{% csrf_token %}
+          <form action="{% url 'login' %}" method="post">{% csrf_token %}
           
 
           <div class="field-wrap">
@@ -50,7 +50,7 @@
         <div id="login">   
           <h1>Welcome Back!</h1>
           
-          <form action="/" method="post">{% csrf_token %}
+          <form action="{% url 'login' %}" method="post">{% csrf_token %}
           
             <div class="field-wrap">
             <label>
