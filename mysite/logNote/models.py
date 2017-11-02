@@ -12,4 +12,5 @@ class User(models.Model):
 class Log(models.Model):
     title = models.TextField();
     body = models.TextField();
-    userId = models.CharField(max_length=140)
+    date = models.DateField();
+    userId = models.ForeignKey(User)
