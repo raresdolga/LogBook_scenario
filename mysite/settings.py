@@ -25,7 +25,7 @@ SECRET_KEY = 'yg--0&b%=2o+st*+e9fr0-ss3kglrb%e-52-63m1k5b)^7z+3y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '<your_username>.pythonanywhere.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['logNote/Templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
