@@ -3,7 +3,7 @@ import hashlib
 from logNote.models import User,Log
 
 def test():
-	return 6;
+	return 7;
 
 def check_user(email):
         if User.objects.filter(email=email).exists():
