@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <title>Authentication LogBook</title>
+
+<!-- <title>LogBook</title> -->
+
   {% load staticfiles %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="{% static 'js/index.js' %}"></script>
@@ -42,6 +46,8 @@
           </div>
           <!--a href="/home" class="button button-block">Get Started</a-->
           <button type="submit" class="button button-block" id="signupBut" name="signup"/>Get Started</button>
+
+          <!-- <button type="submit" class="button button-block" id="signup" name="signup"/>Get Started</button> -->
           
           </form>
 
@@ -57,6 +63,8 @@
               Username<span class="req">*</span>
             </label>
             <input type="username" required autocomplete="off" name = "username" id="username1"/>
+
+            <!-- <input type="username" required autocomplete="off" name = "username" id="username"/> -->
           </div>
           
           <div class="field-wrap">
@@ -64,11 +72,15 @@
               Password<span class="req">*</span>
             </label>
             <input type="password" required autocomplete="off" name = "password" id="password1"/>
+
+            <!-- <input type="password" required autocomplete="off" name = "password" id="password"/> -->
           </div>
           
           <p class="forgot"><a href="#">Forgot Password?</a></p>
           
           <button class="button button-block" id="loginBut" name="login"/>Log In</button>
+
+          <!-- <button class="button button-block" id="login" name="login"/>Log In</button> -->
           
           </form>
 
