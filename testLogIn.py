@@ -87,33 +87,33 @@ driver.get("http://127.0.0.1:8000")
 # currentstate = "login"
 OriginalTitle = driver.title
 
-# inputLogin("bobby500", "")
-# clearLogin()
-# inputLogin("","asdasda")
-# clearLogin()
-# inputLogin("","")
-# clearLogin()
+inputLogin("bobby500", "")
+clearLogin()
+inputLogin("","asdasda")
+clearLogin()
+inputLogin("","")
+clearLogin()
 
-# changeViewToSignup()
+changeViewToSignup()
 
-# pause()
-# inputSignup("", "lamb500")
-# clearSignup()
-# inputSignup("bobbymate",""
-# clearSignup)
-# inputSignup("","")
-# clearSignup()
+pause()
+inputSignup("", "lamb500")
+clearSignup()
+inputSignup("bobbymate","")
+clearSignup()
+inputSignup("","")
+clearSignup()
 
 
 pause()
-inputSignup("bobby129", "lamb129")
+inputSignup("bobby131", "lamb129")
 if checkTitlesAre("diff", OriginalTitle, driver.title):
 		print("Correct signUp Test passed")
 else:
 		print("Correct signUp Test failed")
 
 logOut()
-inputLogin("bobby129", "lamb129")
+inputLogin("bobby131", "lamb129")
 if checkTitlesAre("diff", OriginalTitle, driver.title):
 		print("Correct LogIn Test passed")
 else:
