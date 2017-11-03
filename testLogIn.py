@@ -6,7 +6,20 @@ import time
 import re
 import xml.etree.ElementTree as ET
 
+def compareTitles(title1, title2):
+	if (title1 == title2):
+		return True
+	else:
+		return False
 
+def checkTitlesAre(state, title1, title2): # state assumes either 'diff' or 'notdiff'
+	if (compareTitles(title1, title2)==False and (state == "diff")):
+		return True
+	elif (compareTitles(title1, title2)==True and (state == "notdiff")):
+		return True
+	else:
+		return False
+	
 
 def pause():
         time.sleep(2)
@@ -72,34 +85,41 @@ driver = webdriver.Chrome("/usr/local/bin/chromedriver")
 # driver.get("http://snifflog.uksouth.cloudapp.azure.com")
 driver.get("http://127.0.0.1:8000")
 # currentstate = "login"
-# OriginalTitle = driver.title
+OriginalTitle = driver.title
 
-inputLogin("bobby500", "")
-clearLogin()
-inputLogin("","asdasda")
-clearLogin()
-inputLogin("","")
-clearLogin()
+# inputLogin("bobby500", "")
+# clearLogin()
+# inputLogin("","asdasda")
+# clearLogin()
+# inputLogin("","")
+# clearLogin()
 
-changeViewToSignup()
+# changeViewToSignup()
+
+# pause()
+# inputSignup("", "lamb500")
+# clearSignup()
+# inputSignup("bobbymate",""
+# clearSignup)
+# inputSignup("","")
+# clearSignup()
+
 
 pause()
-inputSignup("", "lamb500")
-clearSignup()
-inputSignup("bobbymate",""
-clearSignup)
-inputSignup("","")
-clearSignup()
+inputSignup("bobby129", "lamb129")
+if checkTitlesAre("diff", OriginalTitle, driver.title):
+		print("Correct signUp Test passed")
+else:
+		print("Correct signUp Test failed")
 
-
-pause()
-inputSignup("bobby128", "lamb128")
 logOut()
-inputLogin("bobby128", "lamb128")
+inputLogin("bobby129", "lamb129")
+if checkTitlesAre("diff", OriginalTitle, driver.title):
+		print("Correct LogIn Test passed")
+else:
+		print("Correct LogIn Test failed")
 logOut()
 
-
-# inputSignup("bobby124","lamb124")
 pause()
 driver.quit()
 
